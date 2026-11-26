@@ -1,0 +1,29 @@
+{
+  "name": "cs601-term-project-api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Small Node/Express API + Postgres for the CS601 portfolio (guestbook CRUD and contact messages)",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.0",
+    "pg": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.15.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.0"
+  }
+}
